@@ -1,0 +1,1 @@
+/Users/robin/IdeaProjects/oss-governance-guide/_workspace/images/ai-openness-tiers-g7.png

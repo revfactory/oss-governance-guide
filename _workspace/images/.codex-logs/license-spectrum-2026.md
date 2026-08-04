@@ -1,0 +1,1 @@
+./license-spectrum-2026.png

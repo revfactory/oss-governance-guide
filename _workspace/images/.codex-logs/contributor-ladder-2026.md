@@ -1,0 +1,1 @@
+./contributor-ladder-2026.png
