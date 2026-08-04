@@ -1,0 +1,116 @@
+push graphic-context
+stroke '#1F3A5F'
+stroke-width 2
+stroke-linecap round
+stroke-linejoin round
+fill white
+path 'M 720,45 L 935,155 L 720,265 L 505,155 Z'
+path 'M 315,265 L 490,355 L 315,445 L 140,355 Z'
+path 'M 1050,265 L 1245,355 L 1050,445 L 855,355 Z'
+path 'M 650,475 L 835,565 L 650,655 L 465,565 Z'
+path 'M 1070,475 L 1245,565 L 1070,655 L 895,565 Z'
+roundrectangle 30,850 210,970 12,12
+roundrectangle 250,850 430,970 12,12
+roundrectangle 470,850 650,970 12,12
+roundrectangle 690,850 870,970 12,12
+roundrectangle 910,850 1090,970 12,12
+stroke-dasharray 10 8
+roundrectangle 1130,850 1350,970 12,12
+pop graphic-context
+
+push graphic-context
+stroke '#E8A33D'
+stroke-width 2
+fill white
+roundrectangle 1450,775 1710,895 12,12
+pop graphic-context
+
+push graphic-context
+stroke '#1F3A5F'
+stroke-width 2
+stroke-linecap round
+stroke-linejoin round
+fill none
+path 'M 575,215 L 405,302'
+path 'M 865,215 L 965,302'
+path 'M 915,417 L 760,500'
+path 'M 1150,418 L 1200,492'
+path 'M 248,410 L 120,850'
+path 'M 365,420 L 340,850'
+path 'M 585,630 L 440,745 L 440,1000 L 120,1000 L 120,970'
+path 'M 708,628 L 455,765 L 455,1030 L 1240,1030 L 1240,970'
+path 'M 982,632 L 560,850'
+path 'M 1045,650 L 780,850'
+path 'M 1110,650 L 1000,850'
+pop graphic-context
+
+push graphic-context
+stroke none
+fill '#1F3A5F'
+polygon 405,302 414.8,290.4 420.2,301
+polygon 965,302 950.5,297.3 958.5,288.3
+polygon 760,500 769.5,488.1 775.1,498.7
+polygon 1200,492 1187,483.8 1197,477
+polygon 120,850 118.1,834.9 129.7,838.3
+polygon 340,850 334.8,835.7 346.8,836.4
+polygon 120,970 126,984 114,984
+polygon 1240,970 1246,984 1234,984
+polygon 560,850 569.7,838.3 575.3,848.9
+polygon 780,850 787.6,836.8 794.8,846.4
+polygon 1000,850 1001.5,834.8 1012,840.6
+pop graphic-context
+
+push graphic-context
+stroke '#E8A33D'
+stroke-width 2
+stroke-linecap round
+stroke-linejoin round
+fill none
+path 'M 1245,565 L 1540,565 L 1540,775'
+pop graphic-context
+
+push graphic-context
+stroke none
+fill '#E8A33D'
+polygon 1540,775 1534,761 1546,761
+pop graphic-context
+
+push graphic-context
+font '/Users/robin/Library/Fonts/NotoSansKR-VariableFont_wght.ttf'
+fill '#1F3A5F'
+stroke none
+text-anchor middle
+font-size 27
+text 720,126 '1'
+text 315,332 '2'
+text 1050,332 '3'
+text 650,542 '4'
+text 1070,542 '5'
+font-size 22
+text 720,177 '제품에 포함되어 배포되는가'
+text 315,383 '특허 보호가 필요한가'
+text 1050,383 '채택 극대화가 최우선인가'
+text 650,593 '유지보수 계획이 있는가'
+text 1070,593 '어디까지 추적하는가'
+font-size 20
+text 475,242 '예'
+text 940,242 '아니오'
+text 835,438 '예'
+text 1205,449 '아니오'
+text 170,538 '아니오'
+text 389,538 '예'
+text 525,686 '예'
+text 672,698 '아니오'
+text 754,741 '파일 단위'
+text 912,759 '파생 전체'
+text 1087,759 '네트워크 제공'
+text 1395,540 '상용 병행'
+font-size 22
+text 120,919 'MIT'
+text 340,919 'Apache-2.0'
+text 560,919 'MPL · LGPL'
+text 780,919 'GPL'
+text 1000,919 'AGPL'
+text 1240,919 'CC0 · Unlicense'
+text 1580,844 '이중 라이선스'
+pop graphic-context

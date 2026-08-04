@@ -1,0 +1,1 @@
+./ai-asset-governance-integration.png

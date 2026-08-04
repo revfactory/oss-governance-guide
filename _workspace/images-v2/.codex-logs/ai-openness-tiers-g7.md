@@ -1,0 +1,1 @@
+./ai-openness-tiers-g7.png

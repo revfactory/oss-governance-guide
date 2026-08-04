@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100">
+  <defs>
+    <style>
+      .node { fill: #FFFFFF; stroke: #1F3A5F; stroke-width: 2; stroke-linejoin: round; }
+      .leaf { fill: #FFFFFF; stroke: #1F3A5F; stroke-width: 2; rx: 12; }
+      .edge { fill: none; stroke: #1F3A5F; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .label { fill: #1F3A5F; font-family: "Noto Sans KR"; font-weight: 500; text-anchor: middle; }
+      .digit { font-size: 27px; font-weight: 600; }
+      .question { font-size: 22px; }
+      .answer { font-size: 20px; }
+      .outcome { font-size: 22px; font-weight: 500; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1F3A5F"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E8A33D"/>
+    </marker>
+  </defs>
+
+  <rect width="1800" height="1100" fill="#FFFFFF"/>
+  <g fill="#1F3A5F" font-family="Noto Sans KR" font-weight="500" text-anchor="middle">
+
+  <!-- Decision nodes -->
+  <path fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" stroke-linejoin="round" d="M 720 45 L 935 155 L 720 265 L 505 155 Z"/>
+  <text font-size="27" font-weight="600" x="720" y="126">1</text>
+  <text font-size="22" x="720" y="177">제품에 포함되어 배포되는가</text>
+
+  <path fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" stroke-linejoin="round" d="M 315 265 L 490 355 L 315 445 L 140 355 Z"/>
+  <text font-size="27" font-weight="600" x="315" y="332">2</text>
+  <text font-size="22" x="315" y="383">특허 보호가 필요한가</text>
+
+  <path fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" stroke-linejoin="round" d="M 1050 265 L 1245 355 L 1050 445 L 855 355 Z"/>
+  <text font-size="27" font-weight="600" x="1050" y="332">3</text>
+  <text font-size="22" x="1050" y="383">채택 극대화가 최우선인가</text>
+
+  <path fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" stroke-linejoin="round" d="M 650 475 L 835 565 L 650 655 L 465 565 Z"/>
+  <text font-size="27" font-weight="600" x="650" y="542">4</text>
+  <text font-size="22" x="650" y="593">유지보수 계획이 있는가</text>
+
+  <path fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" stroke-linejoin="round" d="M 1070 475 L 1245 565 L 1070 655 L 895 565 Z"/>
+  <text font-size="27" font-weight="600" x="1070" y="542">5</text>
+  <text font-size="22" x="1070" y="593">어디까지 추적하는가</text>
+
+  <!-- Upper decision edges -->
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 575 215 L 405 302"/>
+  <text font-size="20" x="475" y="242">예</text>
+
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 865 215 L 965 302"/>
+  <text font-size="20" x="940" y="242">아니오</text>
+
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 915 417 L 760 500"/>
+  <text font-size="20" x="835" y="438">예</text>
+
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 1150 418 L 1200 492"/>
+  <text font-size="20" x="1205" y="449">아니오</text>
+
+  <!-- Diamond 2 outcomes -->
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 248 410 L 120 850"/>
+  <text font-size="20" x="170" y="538">아니오</text>
+
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 365 420 L 340 850"/>
+  <text font-size="20" x="389" y="538">예</text>
+
+  <!-- Diamond 4 outcomes, routed through the open lane and below the leaf row -->
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 585 630 L 440 745 L 440 1000 L 120 1000 L 120 970"/>
+  <text font-size="20" x="525" y="686">예</text>
+
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 708 628 L 455 765 L 455 1030 L 1240 1030 L 1240 970"/>
+  <text font-size="20" x="672" y="698">아니오</text>
+
+  <!-- Diamond 5 outcomes -->
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 982 632 L 560 850"/>
+  <text font-size="20" x="754" y="741">파일 단위</text>
+
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 1045 650 L 780 850"/>
+  <text font-size="20" x="912" y="759">파생 전체</text>
+
+  <path fill="none" stroke="#1F3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" d="M 1110 650 L 1000 850"/>
+  <text font-size="20" x="1087" y="759">네트워크 제공</text>
+
+  <path d="M 1245 565 L 1540 565 L 1540 775" fill="none" stroke="#E8A33D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowAmber)"/>
+  <text font-size="20" x="1395" y="540">상용 병행</text>
+
+  <!-- Standard leaves: exact required single-row order -->
+  <rect fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" rx="12" x="30" y="850" width="180" height="120"/>
+  <text font-size="22" x="120" y="919">MIT</text>
+
+  <rect fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" rx="12" x="250" y="850" width="180" height="120"/>
+  <text font-size="22" x="340" y="919">Apache-2.0</text>
+
+  <rect fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" rx="12" x="470" y="850" width="180" height="120"/>
+  <text font-size="22" x="560" y="919">MPL · LGPL</text>
+
+  <rect fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" rx="12" x="690" y="850" width="180" height="120"/>
+  <text font-size="22" x="780" y="919">GPL</text>
+
+  <rect fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" rx="12" x="910" y="850" width="180" height="120"/>
+  <text font-size="22" x="1000" y="919">AGPL</text>
+
+  <rect x="1130" y="850" width="220" height="120" rx="12" fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2" stroke-dasharray="10 8"/>
+  <text font-size="22" x="1240" y="919">CC0 · Unlicense</text>
+
+  <!-- Separate amber outcome -->
+  <rect x="1450" y="775" width="260" height="120" rx="12" fill="#FFFFFF" stroke="#E8A33D" stroke-width="2"/>
+  <text font-size="22" x="1580" y="844">이중 라이선스</text>
+  </g>
+</svg>

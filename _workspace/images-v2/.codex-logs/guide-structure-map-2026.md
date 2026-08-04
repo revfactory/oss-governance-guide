@@ -1,0 +1,1 @@
+./guide-structure-map-2026.png

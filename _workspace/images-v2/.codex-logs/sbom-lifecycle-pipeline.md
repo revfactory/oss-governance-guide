@@ -1,0 +1,1 @@
+./sbom-lifecycle-pipeline.png
