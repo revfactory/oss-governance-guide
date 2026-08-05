@@ -26,15 +26,15 @@ description: >
 
 | 기존 단계 | 소프트웨어 컴포넌트일 때 | AI 모델·데이터셋일 때 | 이 가이드의 참조 위치 |
 |---|---|---|---|
-| 반입 승인 | 컴포넌트 단위 라이선스 확인과 승인 요청 | 모델 라이선스·AUP<sub>Acceptable Use Policy</sub>·지역 제한 확인 | [모델 라이선스 실사](#모델-라이선스-실사), [「오픈소스SW 사용하기」](/using/) |
+| 반입 승인 | 컴포넌트 단위 라이선스 확인과 승인 요청 | 모델 라이선스·AUP<sub>Acceptable Use Policy</sub>·지역 제한 확인 | [모델 라이선스 실사](#모델-라이선스-실사), [「오픈소스SW 사용하기」](../using/) |
 | 대장 등록 | 컴포넌트명·버전·라이선스 기록 | 개방성 등급, 베이스 모델 계보, 데이터셋 참조를 추가 기록 | [사내 표기 규칙 — 모델 대장의 '개방성 등급' 컬럼](#사내-표기-규칙--모델-대장의-개방성-등급-컬럼) |
-| SBOM | SPDX·CycloneDX 컴포넌트 항목으로 표현 | SPDX AIPackage 또는 CycloneDX modelCard로 표현 | [「오픈소스SW 사용하기」](/using/)의 SBOM 관리 절 |
+| SBOM | SPDX·CycloneDX 컴포넌트 항목으로 표현 | SPDX AIPackage 또는 CycloneDX modelCard로 표현 | [「오픈소스SW 사용하기」](../using/)의 SBOM 관리 절 |
 | 고지 | NOTICE 파일과 라이선스 전문 고지 | NOTICE 문구, 'Built with Llama' 류 표시, AI 기본법 고지를 함께 처리 | [한국 AI 기본법의 고지·표시 의무 — 오픈소스SW 모델도 면제되지 않는다](#한국-ai-기본법의-고지표시-의무--오픈소스sw-모델도-면제되지-않는다) |
-| 배포 승인 | 배포 형태별 의무 이행 확인 | 파생 모델 명명 규칙, 라이선스 사본 동봉, AUP 전가 확인 | [파인튜닝 결과물의 라이선스 승계 — 5개 항목 배포 승인 체크리스트](#파인튜닝-결과물의-라이선스-승계--5개-항목-배포-승인-체크리스트), [「오픈소스SW 공개하기」](/releasing/) |
+| 배포 승인 | 배포 형태별 의무 이행 확인 | 파생 모델 명명 규칙, 라이선스 사본 동봉, AUP 전가 확인 | [파인튜닝 결과물의 라이선스 승계 — 5개 항목 배포 승인 체크리스트](#파인튜닝-결과물의-라이선스-승계--5개-항목-배포-승인-체크리스트), [「오픈소스SW 공개하기」](../releasing/) |
 
 기존 컴포넌트 관리 대장에 '자산 유형' 컬럼(라이브러리 / 모델 / 데이터셋)을 추가하고 유형별 필수 필드를 다르게 정의하면 위 표가 그대로 대장 스키마가 된다.
 
-승인 권한도 새로 만들지 않는다. AI 자산의 반입·배포 승인은 기존 오픈소스SW 승인 주체가 그대로 맡고 자산 유형별 확인 항목만 더한다. 다만 판단에 필요한 지식이 갈리므로 두 가지를 별도로 지정한다. 첫째, 모델·데이터셋 라이선스 원문 판정과 개방성 등급 기록의 소유자를 정한다 — 대장의 등급 값이 조달 문서와 제품 고지에 그대로 인용되기 때문이다. 둘째, 커스텀 라이선스 모델의 상업적 사용과 파생물 배포는 법무 검토를 거치는 경로로 고정한다. 오픈소스 프로그램을 운영하는 조직이라면 이 두 항목을 담당 업무 목록에 더하고, 조직을 어떻게 구성하고 인원을 배치할지는 [「OSPO」](/ospo/)에서 다룬다.
+승인 권한도 새로 만들지 않는다. AI 자산의 반입·배포 승인은 기존 오픈소스SW 승인 주체가 그대로 맡고 자산 유형별 확인 항목만 더한다. 다만 판단에 필요한 지식이 갈리므로 두 가지를 별도로 지정한다. 첫째, 모델·데이터셋 라이선스 원문 판정과 개방성 등급 기록의 소유자를 정한다 — 대장의 등급 값이 조달 문서와 제품 고지에 그대로 인용되기 때문이다. 둘째, 커스텀 라이선스 모델의 상업적 사용과 파생물 배포는 법무 검토를 거치는 경로로 고정한다. 오픈소스 프로그램을 운영하는 조직이라면 이 두 항목을 담당 업무 목록에 더하고, 조직을 어떻게 구성하고 인원을 배치할지는 [「OSPO」](../ospo/)에서 다룬다.
 
 {{< imgproc ai-asset-governance-integration Fit "768x768" >}}
 <center><i>[AI 자산의 기존 오픈소스SW 거버넌스 편입 구조]</i></center>
@@ -78,12 +78,14 @@ OSAID를 확정된 표준처럼 인용하면 사내 정책이 한쪽 입장에�
 
 2026-05-29 파리에서 열린 G7 디지털·기술 장관회의는 'G7 Vision on AI openness opportunities and shared language'를 승인해 AI 개방성을 4단계로 구분했다[^ai-g7-openness]. 아래 표는 각 등급이 무엇을 공개하고 어떤 제한을 두는지 대조한 것으로, 사내 용어 표준과 모델 대장의 값 목록을 이 4단계에 맞춘다.
 
-| 등급 | 공개 범위 | 사용 제한 | 대표 사례 |
+| 등급 | 공개 범위 | 사용 제한 | 적용 예 (이 가이드의 판단) |
 |---|---|---|---|
-| 데이터 공개 오픈소스 AI | 가중치·배포 코드·학습 코드·전체 학습 데이터를 모두 오픈소스SW 라이선스로 무상 공개 | 없음 | (근거 문서에 분류 사례 없음) |
-| 오픈소스 AI | 가중치·배포 코드·학습 코드를 무상 공개하고 학습 데이터도 전체 공개가 원칙이나, 법적·기술적으로 공유가 불가능한 경우에 한해 그 데이터에 관한 데이터 정보로 대체 | 없음 | (근거 문서에 분류 사례 없음) |
+| 데이터 공개 오픈소스 AI | 가중치·배포 코드·학습 코드·전체 학습 데이터를 모두 오픈소스SW 라이선스로 무상 공개 | 없음 | 해당 예를 특정하지 않음 |
+| 오픈소스 AI | 가중치·배포 코드·학습 코드를 무상 공개하고 학습 데이터도 전체 공개가 원칙이나, 법적·기술적으로 공유가 불가능한 경우에 한해 그 데이터에 관한 데이터 정보로 대체 | 없음 | 해당 예를 특정하지 않음 |
 | 가중치 공개 AI | 가중치와 배포 코드를 오픈소스SW 라이선스로 무상 공개 | 없음 | Gemma 4, Qwen3, gpt-oss |
 | 가중치 제공 AI[^ai-g7-weights-available] | 가중치와 배포 코드를 무상 공개하나 라이선스에 사용 제한 포함 | 상업·지역·용도 제한 | Llama 4, Gemma 3 |
+
+마지막 열은 G7 문서에서 온 것이 아니다. G7 문서 본문에는 모델명이 한 건도 등장하지 않는다. 위 '적용 예'는 각 모델의 라이선스와 공개 구성요소를 이 가이드가 등급 정의에 대조해 넣은 것이다. 따라서 사내 문서나 조달 문서에 인용할 때는 등급 정의와 공개 범위까지만 국제 준거로 쓰고, 특정 모델의 등급은 그 모델의 라이선스 원문을 직접 확인해 판정한다. 모델 라이선스는 개정되므로 등급도 함께 바뀐다.
 
 이 문서는 'This document constitutes a non-binding reference'라고 스스로 밝힌 비구속 준거이며, 법적 의무를 만들지 않는다. 그럼에도 사내 표기 기준으로 쓸 가치가 있는 이유는 원칙 4에 있다 — 'any description of an AI as "open" should clearly state which components are made available, whether with or without restrictions, rather than using the term "open" as a blanket characterization'. 문서는 목적에 open washing 방지를 명시한다[^ai-g7-declaration].
 
@@ -192,7 +194,7 @@ Mistral은 모델별로 Apache-2.0, Mistral Research License, Mistral AI Non-Pro
 
 OpenMDW는 Linux Foundation이 2026-05-28 OpenMDW-1.1을 공개했고, NVIDIA가 Cosmos·Isaac GR00T·Ising·Nemotron 모델군의 '향후 릴리스'부터 채택하겠다고 발표했다(현재 배포본의 적용 여부는 모델별로 확인한다)[^ai-openmdw-lf]. SPDX License List 최신판 3.28.0(2026-02-20)에는 OpenMDW-1.0만 등재되어 있어 1.1에는 아직 표준 식별자가 없다 — SBOM에는 LicenseRef- 형태로 기록하고 라이선스 원문을 첨부한다[^ai-spdx-list]. 다만 OSI 승인 여부는 공식 페이지에 언급이 없어 확인되지 않는다 — 'OSI 승인 라이선스다'라고 표기하지 않는다[^ai-openmdw].
 
-커스텀 라이선스를 선택하면 [EU AI Act의 오픈소스SW 예외는 좁다 — 무엇이 예외를 깨는가](#eu-ai-act의-오픈소스sw-예외는-좁다--무엇이-예외를-깨는가)에서 다루는 예외가 깨진다. 공개 절차 자체(공개 심의, 저장소 준비, 커뮤니티 운영)는 [「오픈소스SW 공개하기」](/releasing/)에서 다룬다.
+커스텀 라이선스를 선택하면 [EU AI Act의 오픈소스SW 예외는 좁다 — 무엇이 예외를 깨는가](#eu-ai-act의-오픈소스sw-예외는-좁다--무엇이-예외를-깨는가)에서 다루는 예외가 깨진다. 공개 절차 자체(공개 심의, 저장소 준비, 커뮤니티 운영)는 [「오픈소스SW 공개하기」](../releasing/)에서 다룬다.
 
 
 [^ai-openmdw-lf]: Linux Foundation, Linux Foundation Releases OpenMDW-1.1; NVIDIA Adopts OpenMDW : https://www.linuxfoundation.org/press/linux-foundation-releases-openmdw-1.1-nvidia-adopts-openmdw-for-cosmos-isaac-gr00t-ising-and-nemotron-ai-model-families
@@ -307,7 +309,7 @@ GPAI 제공자가 관리할 시행 일자는 세 개다[^ai-act]. 이 세 일자
 - **2026-08-02** — 집행위와 AI Office의 GPAI 집행 권한·과징금 부과 개시(제101조 및 제88~94조). AI Office 자체는 2025-08-02부터 존재하며, 이 날 시작되는 것은 조사·과징금 권한이다.
 - **2027-08-02** — 2025-08-02 이전 EU 시장에 출시된 기존 GPAI 모델의 소급 준수 기한(제111조(3)).
 
-고위험 시스템 의무의 적용 일자는 같은 개정으로 연기되었으므로 GPAI 일정과 같은 기준일로 관리하지 않는다. 전체 규제 기한은 [「오픈소스SW 사용하기」의 글로벌 SBOM 규제 동향](/using/#글로벌-sbom-규제-동향) 기한표를 단일 기준으로 삼는다.
+고위험 시스템 의무의 적용 일자는 같은 개정으로 연기되었으므로 GPAI 일정과 같은 기준일로 관리하지 않는다. 전체 규제 기한은 [「오픈소스SW 사용하기」의 글로벌 SBOM 규제 동향](../using/#글로벌-sbom-규제-동향) 기한표를 단일 기준으로 삼는다.
 
 [^ai-eu-gpai-guidelines]: artificialintelligenceact.eu, Overview of Guidelines for GPAI Models (2차 출처 — 집행위 가이드라인 해설) : https://artificialintelligenceact.eu/gpai-guidelines-overview/
 [^ai-eu-article53]: artificialintelligenceact.eu, Article 53: Obligations for Providers of General-Purpose AI Models (2차 출처) : https://artificialintelligenceact.eu/article/53/
@@ -320,19 +322,19 @@ GPAI 제공자가 관리할 시행 일자는 세 개다[^ai-act]. 이 세 일자
 
 표시 방식은 결과물의 성격에 따라 갈린다. 딥페이크 결과물은 사람이 명확히 인식할 수 있는 가시적 표시가 필요하다. 일반 생성물은 사람 인식 방식과 기계 판독 방식(워터마크·메타데이터) 중에서 선택할 수 있으나, 기계 판독 방식을 택하면 안내 문구나 음성을 최소 1회 제공해야 한다[^ai-kr-aiact-decree].
 
-핵심은 예외의 부재다. 제31조 제4항과 시행령 제23조에 일부 예외(사용이 명백한 경우, 내부 업무 목적 사용 등)가 있으나, 오픈소스 AI를 대상으로 한 예외는 확인되지 않았다. 제재는 고지 의무 위반 시 3천만원 이하 과태료이며, 정부가 1년 이상의 계도기간을 운영해 실제 부과는 2027년 이후가 될 가능성이 크다고 보고된다[^ai-kr-aiact-sk].
+핵심은 예외의 부재다. 제31조 제4항과 시행령 제23조에 일부 예외(사용이 명백한 경우, 내부 업무 목적 사용 등)가 있으나, 오픈소스 AI를 대상으로 한 예외는 확인되지 않았다. 제재는 고지·표시 의무 위반 시 3천만원 이하 과태료다(법 제43조 제1항 제2호)[^ai-kr-aiact]. 다만 과학기술정보통신부는 시행령 입법예고 단계에서 과태료 부과에 최소 1년 이상의 계도기간을 두겠다고 밝혔으므로, 실제 부과는 2027년 이후가 될 가능성이 크다[^ai-kr-grace].
 
 실행 지시는 하나다. AI 고지·표시를 기존 오픈소스SW 고지 화면과 같은 위치에 배치해 운영 부담을 줄이고, 오픈소스SW 모델 사용이 면제 사유가 아님을 정책 문서에 명시한다.
 
 [^ai-kr-aiact]: 국가법령정보센터, 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 : https://www.law.go.kr/lsInfoP.do?lsiSeq=268543
 [^ai-kr-aiact-decree]: 국가법령정보센터, 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 시행령(시행 2026-01-22) : https://www.law.go.kr/LSW/lsInfoP.do?efYd=20260122&lsiSeq=282879
-[^ai-kr-aiact-sk]: 세종, 인공지능 기본법과 콘텐츠 산업 – '투명성 확보 의무'를 중심으로 (2차 출처 — 법무법인 뉴스레터) : https://www.shinkim.com/kor/media/newsletter/3142
+[^ai-kr-grace]: 과태료 계도기간 운영 등 상세조항을 담은 'AI 기본법' 시행령 입법예고 (2차 출처 — 법무법인 뉴스레터) : https://www.daeryunlaw.com/newsletter/news/246
 
 #### AI 생성 코드에 저작권이 있는가 — 미국 저작권청의 입장과 국내 미확립
 
 미국 저작권청은 2025-01-29 발표한 Part 2(Copyrightability)에서 프롬프트 입력만으로 만든 순수 AI 생성물의 저작물성을 부정하고 'prompts alone do not provide sufficient human control'이라고 밝혔다. 인간이 선택·배열·실질적 수정을 가한 부분은 사안별로 보호될 수 있다는 입장이다[^ai-uscopyright]. 2025-05-09 사전공개된 Part 3(Generative AI Training)은 학습 목적 이용의 공정이용을 추정할 수 없고 사안별로 판단해야 한다고 보았으며, 새로운 법정 예외의 신설은 불필요하다고 결론지었다[^ai-uscopyright-part3].
 
-한국 저작권법에는 이에 대응하는 유권해석이 별도로 정리되어 있지 않아 국내 적용은 미확립이다. 실무에서는 릴리스 검토 항목 하나로 다룬다 — AI 생성 비중이 높은 산출물을 오픈소스SW로 사외 공개할 때 저작권이 성립하지 않아 라이선스 부여가 무의미해질 수 있다는 점을 검토하고, 인간 기여 기록(리뷰·수정 이력)을 남긴다. 공개 절차는 [「오픈소스SW 공개하기」](/releasing/)에서 다룬다.
+한국 저작권법에는 이에 대응하는 유권해석이 별도로 정리되어 있지 않아 국내 적용은 미확립이다. 실무에서는 릴리스 검토 항목 하나로 다룬다 — AI 생성 비중이 높은 산출물을 오픈소스SW로 사외 공개할 때 저작권이 성립하지 않아 라이선스 부여가 무의미해질 수 있다는 점을 검토하고, 인간 기여 기록(리뷰·수정 이력)을 남긴다. 공개 절차는 [「오픈소스SW 공개하기」](../releasing/)에서 다룬다.
 
 
 [^ai-uscopyright]: U.S. Copyright Office, Copyright and Artificial Intelligence (Part 2: Copyrightability, 2025-01-29) : https://www.copyright.gov/ai/
@@ -412,7 +414,7 @@ GitHub Copilot의 code referencing은 공식 문서에 다음과 같이 규정�
 
 ②를 diff 기준으로 제한하는 것은 비용 통제 지침이다. 전체 리포지토리 상시 스캔은 검출량 대비 비용이 급격히 커진다. ③의 로그 보존은 [코드 참조 필터가 잡지 못하는 것 — 약 150자 임계, GitHub 공개 저장소 색인 한정, 수개월 갱신 주기](#코드-참조-필터가-잡지-못하는-것--약-150자-임계-github-공개-저장소-색인-한정-수개월-갱신-주기)의 실행 지시와 같은 항목이다.
 
-이 3중 검사는 릴리스 절차 안에 놓이는 게이트이며, 릴리스 게이트 자체의 구성과 승인 흐름은 [「오픈소스SW 공개하기」](/releasing/)에서 다룬다. AI가 존재하지 않는 패키지명을 만들어 내는 패키지 환각과 그것을 노린 슬롭스쿼팅은 공급망 보안 주제이므로 이 장에서 다루지 않는다 — [「오픈소스SW 사용하기」](/using/)의 보안 절을 참조한다.
+이 3중 검사는 릴리스 절차 안에 놓이는 게이트이며, 릴리스 게이트 자체의 구성과 승인 흐름은 [「오픈소스SW 공개하기」](../releasing/)에서 다룬다. AI가 존재하지 않는 패키지명을 만들어 내는 패키지 환각과 그것을 노린 슬롭스쿼팅은 공급망 보안 주제이므로 이 장에서 다루지 않는다 — [「오픈소스SW 사용하기」](../using/)의 보안 절을 참조한다.
 
 {{< imgproc ai-code-release-triple-gate Fit "768x768" >}}
 <center><i>[릴리스 전 3중 검사의 커버리지 구조]</i></center>
@@ -432,7 +434,7 @@ RedMonk는 2026-05-12 약 290만 개 모델을 스캔해 약 100만 개만 라�
 
 #### base_model 계보를 거슬러 올라간다 — 표기된 라이선스를 믿지 않는 이유
 
-Laufer·Oderinwale·Kleinberg의 Hugging Face 186만 모델 분석은 '모델 라이선스가 상업/사용제한형에서 허용형 또는 카피레프트형으로 진화한다(licenses evolve from commercial or use-restricted varieties to permissive or copyleft varieties)'고 관측했다[^ai-hf-anatomy]. 승계되어야 할 제한이 파생 과정에서 사라지고 있다는 뜻이다. 파생 모델에 표기된 라이선스를 그대로 믿지 않는 이유가 여기에 있다.
+Laufer·Oderinwale·Kleinberg의 Hugging Face 186만 모델 분석은 '라이선스가 직관과 반대로 제한적인 상업 라이선스에서 허용형 또는 카피레프트 라이선스로 표류하며, 그것이 흔히 상류 라이선스의 조항을 위반한다(Licenses counter-intuitively drift from restrictive, commercial licenses towards permissive or copyleft licenses, often in violation of upstream license's terms)'고 관측했다[^ai-hf-anatomy]. 승계되어야 할 제한이 파생 과정에서 사라지고 있고, 그 사라짐 자체가 이미 라이선스 위반이라는 뜻이다. 파생 모델에 표기된 라이선스를 그대로 믿지 않는 이유가 여기에 있다.
 
 확인 절차는 다음과 같다.
 

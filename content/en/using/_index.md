@@ -10,7 +10,7 @@ description: >
 
 ### 기업이 바라보는 오픈소스SW
 
-최근 기업들의 오픈소스SW에 대한 인식과 활용이 크게 변화하고 있다. Perforce·Open Source Initiative·Eclipse Foundation이 공동 발간한 [2026 State of Open Source Report](https://www.openlogic.com/resources/state-of-open-source-report)[^perforce2026]에 따르면, 조사 대상 조직의 98%가 오픈소스SW 사용을 유지하거나 늘렸고 사용을 줄인 조직은 2% 미만이다. 도입 동인도 바뀌었다 — 2023년 조사에서 1위였던 '비용 절감'을 밀어내고 '벤더 락인 회피'가 55%로 올라섰다(유럽 63%). 오픈소스SW 채택의 이유가 예산 압박에서 기술 주권과 공급자 종속 회피로 이동하고 있다는 뜻이다.
+최근 기업들의 오픈소스SW에 대한 인식과 활용이 크게 변화하고 있다. Perforce·Open Source Initiative·Eclipse Foundation이 공동 발간한 [2026 State of Open Source Report](https://www.openlogic.com/resources/state-of-open-source-report)[^perforce2026]에 따르면, 조사 대상 조직의 98%가 오픈소스SW 사용을 유지하거나 늘렸고 사용을 줄인 조직은 2% 미만이다. 도입 동인은 순위가 뒤바뀌지는 않았다. '라이선스 비용과 전체 비용 절감'이 여전히 1위다. 다만 '벤더 락인 회피'가 2025년 조사보다 22%p 뛰어올라 응답자 55%가 이를 이유로 꼽았다(유럽 63%). 예산 압박이라는 오래된 동기 위에 기술 주권과 공급자 종속 회피라는 동기가 빠르게 겹쳐지고 있다는 뜻이다.
 
 [^perforce2026]: 2026 State of Open Source Report : https://www.openlogic.com/resources/state-of-open-source-report
 
@@ -64,15 +64,15 @@ DataReportal의 [Digital 2024: South Korea 보고서](https://datareportal.com/r
 [^istio]: 이스티오(Istio) : https://istio.io
 [^prometheus]: 프로메테우스(Prometheus) : https://prometheus.io
 
-국내 오픈소스SW 시장은 지속적인 성장세를 보이고 있다. NIPA의 [2024년 오픈소스SW 가이드](https://www.oss.kr/oss_guide/show/9a73fa3c-c233-4e8b-8527-7d57ed7218f7)[^nipa2024]에 따르면, 2022년 국내 오픈소스SW 시장규모는 2021년 대비 11.4% 성장한 3,380억 원을 기록했다. 또한, 국내 기업의 오픈소스SW 활용률은 2021년 대비 5.8%p 증가한 67.3%에 달하며, 특히 SW기업의 오픈소스SW 활용률은 94.2%에 이르는 것으로 나타났다.
+국내 오픈소스SW 시장은 빠르진 않아도 꾸준히 커지고 있다. NIPA 「2023 오픈소스SW(OSS) 실태조사 보고서」는 국내 시장 규모를 2023년 3,835억 원으로 집계했다[^nipa2023survey]. 2020년 2,843억 원, 2021년 3,032억 원, 2022년 3,380억 원을 거쳐 온 수치이며 2023년 성장률은 전년 대비 약 15%다. 기업의 활용률은 전체 69%, SW기업 100%, 비SW산업 56%로 업종 간 격차가 크다. 조사는 국내 기업 1,287개와 개발자 1,250명을 대상으로 했다. 국내 수치는 이 조사가 이 가이드 집필 시점에 확인 가능한 최신 전수 조사이므로 2023년 기준으로 읽어야 한다.
 
-[^nipa2024]: NIPA, 오픈소스SW 가이드 3종 2024년 개정판 발간 : https://www.oss.kr/oss_guide/show/9a73fa3c-c233-4e8b-8527-7d57ed7218f7
+[^nipa2023survey]: NIPA 「2023 오픈소스SW(OSS) 실태조사 보고서」. 수치는 전자신문 2024년 6월 10일 보도로 확인했다 : https://www.etnews.com/20240610000212
 
 이러한 추세는 국내 오픈소스SW 생태계가 단순한 사용을 넘어 글로벌 오픈소스SW 커뮤니티에 적극적으로 참여하고 기여하는 단계로 발전하고 있음을 보여준다. 특히 금융, 제조, 유통 등 전통 산업 분야에서도 오픈소스SW 기술 도입이 가속화되고 있어, 앞으로 국내 오픈소스SW 시장의 성장세는 더욱 가파를 것으로 전망된다.
 
 
 ### 오픈소스SW 도입 이유
-해를 거듭할수록 기업들은 점점 더 많은 오픈소스SW를 도입하고 있다. 도입 이유는 비용 절감에서 벤더 락인 회피·기술 주권으로 이동하고 있다. 독점 소프트웨어는 라이선스 비용이 계속 발생하고 벤더에 종속되는 문제가 있으며, 시장이나 기술의 변화에도 상대적으로 느리게 대응한다. 그 결과 기능, 품질, 보안 면에서 오픈소스SW가 독점 소프트웨어보다 낫다는 인식이 자리 잡았다. 이 밖에도 최신 기술 확보, IT 기술 역량 강화, 경쟁력 강화, 시장 확대, 인재 확보 등 도입 이유는 다양하다. 결과적으로 오픈소스SW는 총소유 비용(TCO) 감소뿐 아니라 여러 측면에서 기업에 유리하다. 오픈소스SW를 도입하는 이유를 항목별로 살펴본다.
+해를 거듭할수록 기업들은 점점 더 많은 오픈소스SW를 도입하고 있다. 도입 이유의 1순위는 여전히 비용 절감이고, 그 위에 벤더 락인 회피와 기술 주권이라는 이유가 빠르게 겹쳐지고 있다. 독점 소프트웨어는 라이선스 비용이 계속 발생하고 벤더에 종속되는 문제가 있으며, 시장이나 기술의 변화에도 상대적으로 느리게 대응한다. 그 결과 기능, 품질, 보안 면에서 오픈소스SW가 독점 소프트웨어보다 낫다는 인식이 자리 잡았다. 이 밖에도 최신 기술 확보, IT 기술 역량 강화, 경쟁력 강화, 시장 확대, 인재 확보 등 도입 이유는 다양하다. 결과적으로 오픈소스SW는 총소유 비용(TCO) 감소뿐 아니라 여러 측면에서 기업에 유리하다. 오픈소스SW를 도입하는 이유를 항목별로 살펴본다.
 
 #### 비용 절감
 일반적으로 오픈소스SW는 권리자인 저작권자가 라이선스를 통해 이용을 허락한 것이며, [OSI(Open Source Initiative)](https://opensource.org)[^osi]에서 인증한 오픈소스SW 라이선스들은 모두 상업적 이용을 제한하지 않는다. 라이선스 의무 사항만 준수하면 기업은 비용을 지불하지 않고 자유롭게 오픈소스SW를 사용할 수 있다. 그리고 오픈소스SW는 완성된 패키지 형태로 제공되기도 하는데 종종 누구나 자유롭게 사용할 수 있는 커뮤니티 버전과 과금 정책이 포함된 엔터프라이즈 버전이 따로 존재하기도 한다. 엔터프라이즈 버전은 프리미엄 기능이나 보안 패치, 기술 지원 등을 통한 차별화 전략을 사용하기에 기업은 사용 환경에 따라 적절히 선택할 수 있다.
@@ -338,7 +338,7 @@ O는 의무가 발생함, X는 발생하지 않음, 조건부는 아래 조건�
 | 2028년 중(계획) | 국내 주요 기관 납품 시 개발환경 보안 점검 체크리스트 우선 적용[^sw-roadmap2026] | 주요 기관에 제품을 납품하는 기업 | 아래 [국내 SBOM 규제 동향](#국내-sbom-규제-동향) 참조 |
 | 2028-08-02 | EU AI Act Annex I 내장형 고위험 의무[^ai-omnibus] | 제품에 내장된 고위험 AI 시스템 제공자 | 위와 같음 |
 
-Annex III 고위험 의무는 2026-08-02에서 2027-12-02로, Annex I 내장형 고위험 의무는 2027-08-02에서 2028-08-02로 각각 연기되었다. 근거는 2026-07-24 관보에 게재되고 2026-07-27 발효한 Regulation (EU) 2026/1744이다[^ai-omnibus]. 이 표가 이 가이드의 규제 일정 단일 정본이며, 다른 장은 일정을 다시 나열하지 않는다. 범용 AI 모델(GPAI) 고유 의무의 일자는 [AI와 오픈소스SW](/ai/)에서 다룬다.
+Annex III 고위험 의무는 2026-08-02에서 2027-12-02로, Annex I 내장형 고위험 의무는 2027-08-02에서 2028-08-02로 각각 연기되었다. 근거는 2026-07-24 관보에 게재되고 2026-07-27 발효한 Regulation (EU) 2026/1744이다[^ai-omnibus]. 이 표가 이 가이드의 규제 일정 단일 정본이며, 다른 장은 일정을 다시 나열하지 않는다. 범용 AI 모델(GPAI) 고유 의무의 일자는 [AI와 오픈소스SW](../ai/)에서 다룬다.
 
 [^ai-act]: Regulation (EU) 2024/1689 (AI Act) : https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
 [^ai-omnibus]: Regulation (EU) 2026/1744 of 8 July 2026 (Digital Omnibus on AI), OJ L, 2026/1744, 24.7.2026 : https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng
@@ -396,9 +396,9 @@ Annex I Part II(1)은 제조사가 "identify and document vulnerabilities and co
 
 제13조(5)는 상업적 활동 과정에서 시장에 출하되지 않은 자유·오픈소스SW 구성요소를 통합하는 경우까지 포함해 제조사에 실사<sub>due diligence</sub> 의무를 지운다. 제13조(6)은 구성요소에서 취약점을 발견하면 그 구성요소를 제조·유지관리하는 주체에 보고하고 수정 코드와 문서를 공유하도록 요구한다[^cra].
 
-이 조항은 오픈소스SW '사용'을 '기여'로 연결하는 법적 유인을 처음으로 만들었다. 보안 패치를 만들고도 사내에만 두는 관행은 CRA 적용 제품에서는 의무 위반이 된다. 사내에서 만든 패치를 상류 프로젝트에 제출하는 경로를 오픈소스SW 정책에 명문화해야 한다. 기여 승인 절차는 [오픈소스SW 기여하기](/contributing/)에서 다룬다.
+이 조항은 오픈소스SW '사용'을 '기여'로 연결하는 법적 유인을 처음으로 만들었다. 보안 패치를 만들고도 사내에만 두는 관행은 CRA 적용 제품에서는 의무 위반이 된다. 사내에서 만든 패치를 상류 프로젝트에 제출하는 경로를 오픈소스SW 정책에 명문화해야 한다. 기여 승인 절차는 [오픈소스SW 기여하기](../contributing/)에서 다룬다.
 
-한편 CRA는 오픈소스SW 스튜어드<sub>open-source software steward</sub>라는 지위를 두어 상업적 제조사와 다른 의무를 지운다. 스튜어드 판정 기준과 지위별 의무·제재 범위는 [오픈소스SW 공개하기](/releasing/)의 CRA 지위 판정표에서 다룬다.
+한편 CRA는 오픈소스SW 스튜어드<sub>open-source software steward</sub>라는 지위를 두어 상업적 제조사와 다른 의무를 지운다. 스튜어드 판정 기준과 지위별 의무·제재 범위는 [오픈소스SW 공개하기](../releasing/)의 CRA 지위 판정표에서 다룬다.
 
 ##### **5. 적용 판단 체크리스트**
 
@@ -410,7 +410,7 @@ Annex I Part II(1)은 제조사가 "identify and document vulnerabilities and co
 
 #### 국내 SBOM 규제 동향
 
-국내 SBOM 정책의 계보는 세 단계다. 2024-05-13 과학기술정보통신부·국가정보원·디지털플랫폼정부위원회가 공동으로 'SW 공급망 보안 가이드라인 1.0'을 발표해 SBOM 기반 관리체계 구축 방안을 제시했고[^2060204], 2024-09-01 국가안보실이 14개 부처와 함께 '국가 사이버안보 기본계획'을 100대 실천과제로 발표해 소프트웨어 공급망 보안을 국가 과제로 편입했으며[^cyber-basic-plan], 2026-06-24 과학기술정보통신부와 국가정보원이 'AI 일상화 시대를 준비하는 SW 공급망 보안 강화 로드맵'을 발표했다[^sw-roadmap2026]. 법적 기반으로는 2024년 1월 '경제안보 지원을 위한 공급망 안정화 기본법' 등 3개 법률이 제정되어 소프트웨어를 경제안보 품목으로 지정했다[^korlaw].
+국내 SBOM 정책의 계보는 세 단계다. 2024-05-13 과학기술정보통신부·국가정보원·디지털플랫폼정부위원회가 공동으로 'SW 공급망 보안 가이드라인 1.0'을 발표해 SBOM 기반 관리체계 구축 방안을 제시했고[^2060204], 2024-09-01 국가안보실이 14개 부처와 함께 '국가 사이버안보 기본계획'을 100대 실천과제로 발표해 소프트웨어 공급망 보안을 국가 과제로 편입했으며[^cyber-basic-plan], 2026-06-24 과학기술정보통신부와 국가정보원이 'AI 일상화 시대를 준비하는 SW 공급망 보안 강화 로드맵'을 발표했다[^sw-roadmap2026]. 법적 기반으로는 「경제안보를 위한 공급망 안정화 지원 기본법」(법률 제19828호, 2023-12-26 공포, 2024-06-27 시행)을 포함한 3개 법률이 제정되어 소프트웨어를 경제안보 품목으로 지정할 근거가 생겼다[^korlaw].
 
 2026년 로드맵은 3대 전략 9개 과제로 구성되며 연도별 일정은 다음과 같다. 로드맵은 법령이 아닌 정책 계획이고 세부 일정은 2차 출처를 기준으로 정리한 것이므로, 발표 시점과 시행 시점을 구분해 읽어야 한다.
 
@@ -428,7 +428,7 @@ Annex I Part II(1)은 제조사가 "identify and document vulnerabilities and co
 
 [^2060204]: SW 공급망 보안 가이드라인 1.0(전체본·요약본), 2024-05-13 : https://www.kisa.or.kr/2060204/form?postSeq=15&page=1
 [^cyber-basic-plan]: 뉴스1, 안보실, 사이버안보 기본계획 발표…'선제 대응력' 방점 (2024-09-01) : https://www.news1.kr/politics/president/5527847
-[^korlaw]: 경제안보 지원을 위한 공급망 안정화 기본법 : https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=257271#0000
+[^korlaw]: 경제안보를 위한 공급망 안정화 지원 기본법 (법률 제19828호) : https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=257271#0000
 [^nis-testing]: 국가정보원, 보안적합성 검증 보안요구사항(보안기능 시험제도 운영지침 게시) : https://www.nis.go.kr/AF/1_7_2_4/list.do
 
 
@@ -606,7 +606,7 @@ jobs:
 
 ##### **3. 중앙 보관 — Dependency-Track**
 
-생성한 SBOM은 릴리스 아티팩트로 첨부하는 것과 별개로 중앙 보관소에 적재한다. OWASP Dependency-Track은 SBOM을 수집해 취약점 데이터베이스와 대조하며 신규 CVE가 공개되면 기존 SBOM을 다시 평가한다. 5.0은 2026-06-09 GA되었고 이 릴리스부터 업로드된 BOM·VEX의 스키마 검증을 강제해 스키마 위반 파일을 거부한다[^dtrack5]. 기존 파이프라인이 이 검증에서 깨질 수 있으므로 업그레이드 전에 검증한다.
+생성한 SBOM은 릴리스 아티팩트로 첨부하는 것과 별개로 중앙 보관소에 적재한다. OWASP Dependency-Track은 SBOM을 수집해 취약점 데이터베이스와 대조하며 신규 CVE가 공개되면 기존 SBOM을 다시 평가한다. 업로드된 BOM을 CycloneDX 스키마와 대조해 위반 파일을 거부하는 검증은 v4.11.0(2024-05-07)에 들어갔고[^dtrack411], 5.0은 2026-06-09 GA되었다[^dtrack5]. 기존 파이프라인이 이 스키마 검증에서 깨질 수 있으므로, 4.11 이상으로 올리기 전에 생성한 SBOM이 스키마를 만족하는지 확인한다.
 
 ##### **4. 검수**
 
@@ -618,6 +618,7 @@ jobs:
 [^syft]: anchore/syft — SBOM 생성 CLI : https://github.com/anchore/syft
 [^trivy-gh]: aquasecurity/trivy : https://github.com/aquasecurity/trivy
 [^dtrack5]: OWASP Dependency-Track 5.0 Is Now Generally Available (2026-06-09) : https://owasp.org/blog/2026/06/09/dependency-track-v5
+[^dtrack411]: Dependency-Track v4.11.0 릴리스 노트, "Validate uploaded BOMs against CycloneDX schema" (PR #3522, 2024-05-07) : https://github.com/DependencyTrack/dependency-track/releases/tag/4.11.0
 [^ossra2026]: 2026 Open Source Security and Risk Analysis (OSSRA) Report, Black Duck : https://www.blackduck.com/content/dam/black-duck/en-us/reports/rep-ossra.pdf
 
 #### VEX로 오탐 줄이기 — SBOM만으로 안 되는 이유
@@ -1069,16 +1070,16 @@ axios 대표 유지관리자를 겨냥한 소셜 엔지니어링 캠페인이 �
 
 ##### 7. 이름 혼동 — 타이포스쿼팅과 조직 스코프 사칭
 
-2026-07-07 npm 13개와 PyPI 4개의 악성 패키지가 PaySafe·Skrill·Neteller 결제 SDK를 사칭했다. 설치 시점에 실행되는 스크립트로 API 키·토큰·시크릿을 수집해 외부로 반출하는 방식이며, import나 함수 호출이 필요 없다[^socket-typosquat]. 2026-05-28~29에는 세 개의 npm 계정이 9개 조직 스코프를 사칭한 45개 악성 패키지를 게시했다. 버전을 100.100.100처럼 비정상적으로 높게 매겨, 사내 레지스트리와 공개 레지스트리를 함께 조회하는 설정에서 공개 쪽 패키지가 선택되도록 설계했다[^ms-depconfusion].
+2026-07-07 npm 13개와 PyPI 4개의 악성 패키지가 PaySafe·Skrill·Neteller 결제 SDK를 사칭했다. 발동 조건은 레지스트리마다 다르다. npm 쪽은 개발자가 API 키를 설정하고 해당 메서드를 호출해야 자격 증명이 외부로 나가고, PyPI 쪽만 별도 호출 없이 동작하되 그 시점도 설치가 아니라 import 다[^socket-typosquat]. 정상 SDK의 인터페이스를 그대로 모방하기 때문에, 개발자가 평소 쓰던 방식으로 호출하는 순간 발동한다. 2026-05-28~29에는 세 개의 npm 계정이 9개 조직 스코프를 사칭한 45개 악성 패키지를 게시했다. 버전을 100.100.100처럼 비정상적으로 높게 매겨, 사내 레지스트리와 공개 레지스트리를 함께 조회하는 설정에서 공개 쪽 패키지가 선택되도록 설계했다[^ms-depconfusion].
 
-근본 원인은 레지스트리가 이름 등록을 사전 심사하지 않는 구조, 설치 시 스크립트 자동 실행, 그리고 사내 패키지 이름이 구인 공고·공개 저장소·Docker 레이어 메타데이터 등으로 외부에 새어 나간다는 점이다.
+근본 원인은 레지스트리가 이름 등록을 사전 심사하지 않는 구조와, 사내 패키지 이름이 구인 공고·공개 저장소·Docker 레이어 메타데이터 등으로 외부에 새어 나간다는 점이다. 발동에 개발자의 호출이 필요하다는 점은 위안이 되지 않는다. 이름이 정상 SDK와 구분되지 않으면 호출은 어차피 일어난다.
 
 통제 네 가지를 신규 프로젝트 생성 템플릿에 넣는다.
 
 - `.npmrc`에 스코프별 레지스트리를 고정한다(`@회사명:registry=https://사내레지스트리`). 이것 하나로 의존성 혼동 대부분이 차단된다.
 - 사내 스코프명을 공개 레지스트리에 선점 등록해 둔다.
 - 사내 프록시에서 게시된 지 일정 기간이 지나지 않은 패키지를 차단한다.
-- `--ignore-scripts`를 기본값으로 하고 예외를 허용 목록으로 관리한다.
+- `--ignore-scripts`를 기본값으로 하고 예외를 허용 목록으로 관리한다. 이 캠페인의 발동 경로는 설치 스크립트가 아니었지만, 설치 시 자동 실행은 다른 사례에서 반복되는 경로이므로 함께 막아 둔다.
 
 [^socket-typosquat]: Socket, Coordinated npm and PyPI Campaign Typosquats Popular Secure Payment Apps : https://socket.dev/blog/npm-pypi-campaign-typosquats-popular-secure-payment-apps
 [^ms-depconfusion]: Microsoft Security Blog, Malicious npm packages abuse dependency confusion to profile developer environments (2026-05-29) : https://www.microsoft.com/en-us/security/blog/2026/05/29/33-malicious-npm-packages-abuse-dependency-confusion-profile-developer-environments/
@@ -1108,7 +1109,7 @@ axios 대표 유지관리자를 겨냥한 소셜 엔지니어링 캠페인이 �
 
 #### 오픈소스SW 보안 취약점 대응 체계
 
-취약점 대응은 탐지 → 선별 → 조치 → 검증 → 기록의 한 흐름이다. 각 단계를 서로 다른 조직이 서로 다른 문서로 관리하면 사고가 났을 때 흐름이 끊긴다. 조직 차원의 정책 수립, 개발자 교육 체계, 전담 조직 구성은 [OSPO](/ospo/)에서 다루고, 이 절에서는 실행 절차만 다룬다. 보안 관점에서 OSPO이 소유해야 할 결정은 세 가지다 — 오픈소스SW 도입 승인 정책, 취약점 대응 SLA, 예외 승인 권한.
+취약점 대응은 탐지 → 선별 → 조치 → 검증 → 기록의 한 흐름이다. 각 단계를 서로 다른 조직이 서로 다른 문서로 관리하면 사고가 났을 때 흐름이 끊긴다. 조직 차원의 정책 수립, 개발자 교육 체계, 전담 조직 구성은 [OSPO](../ospo/)에서 다루고, 이 절에서는 실행 절차만 다룬다. 보안 관점에서 OSPO이 소유해야 할 결정은 세 가지다 — 오픈소스SW 도입 승인 정책, 취약점 대응 SLA, 예외 승인 권한.
 
 {{< imgproc vulnerability-triage-pipeline Fit "768x768" >}}
 <center><i>[취약점 대응 파이프라인]</i></center>
@@ -1230,7 +1231,7 @@ SLSA는 v1.2가 현행이며 Build 트랙(L0~L3)과 Source 트랙(L1~L4)으로 �
 
 ##### **5. npm 인증 개편 대응 체크리스트**
 
-npm 인증 체계 개편의 사실관계, 곧 classic token 폐기 일자와 granular token의 최대 수명은 [오픈소스SW 공개하기](/releasing/)의 안전 배포 체크리스트에서 다룬다. 여기서는 소비자 관점에서 사내에 남은 잔재를 감사하는 항목만 확인한다.
+npm 인증 체계 개편의 사실관계, 곧 classic token 폐기 일자와 granular token의 최대 수명은 [오픈소스SW 공개하기](../releasing/)의 안전 배포 체크리스트에서 다룬다. 여기서는 소비자 관점에서 사내에 남은 잔재를 감사하는 항목만 확인한다.
 
 - [ ] 사내 CI/CD에 남아 있는 npm classic token 잔재를 전수 조사했는가
 - [ ] OIDC Trusted Publishing으로 전환했는가. 전환 시 프로비넌스 어테스테이션이 자동 생성·게시된다
@@ -1397,7 +1398,7 @@ CI는 방어 수단이면서 동시에 공격 대상이다. 2025년부터 2026�
 
 | 검사 | 무엇을 보는가 | 도구 | 실패 시 처리 |
 |------|---------------|------|--------------|
-| 스키마 유효성 | 파일이 선언한 포맷·판번호의 스키마를 만족하는가 | Dependency-Track 5.0 업로드 검증[^dtrack5] | 검수 미완료 |
+| 스키마 유효성 | 파일이 선언한 포맷·판번호의 스키마를 만족하는가 | Dependency-Track 업로드 검증(v4.11.0 이상)[^dtrack411] | 검수 미완료 |
 | 최소 요소 충족 | 필수 필드가 실제로 채워졌는가 | spdx/ntia-conformance-checker[^ntia-checker], interlynk-io/sbomqs[^sbomqs] | 검수 미완료 |
 | 납품 바이너리 재스캔 대조 | 제출된 SBOM이 실제 산출물과 일치하는가 | Syft·Trivy로 재스캔 후 컴포넌트 목록 차집합 확인 | 검수 미완료 |
 
@@ -1695,13 +1696,13 @@ AI 코딩 도구가 제안한 코드에는 존재하지 않는 패키지를 impo
 
 ##### **의존성 스캔으로는 잡히지 않는 부분**
 
-의존성 기반 SCA는 매니페스트에 선언된 패키지를 본다. 검출 원리의 차이와 스니펫 매칭 구성, 릴리스 전 3중 검사와 AI 모델 라이선스 판정은 [AI와 오픈소스SW](/ai/)에서 다룬다. 여기서 확인할 것은 코드 조각 수준의 검사를 의존성 스캔과 별도로 구성해야 한다는 점이다.
+의존성 기반 SCA는 매니페스트에 선언된 패키지를 본다. 검출 원리의 차이와 스니펫 매칭 구성, 릴리스 전 3중 검사와 AI 모델 라이선스 판정은 [AI와 오픈소스SW](../ai/)에서 다룬다. 여기서 확인할 것은 코드 조각 수준의 검사를 의존성 스캔과 별도로 구성해야 한다는 점이다.
 
 AI 생성 코드에도 동일한 정적 분석을 예외 없이 적용한다. 이때 데이터 흐름 분석<sub>taint analysis</sub>을 반드시 포함한다. Veracode의 반복 측정에서 LLM 생성 코드의 보안 검사 통과율은 약 55%로 2년째 개선되지 않았고, CWE 유형별로는 SQL 인젝션과 취약한 암호 알고리즘이 82~86%로 양호한 반면 데이터 흐름 분석이 필요한 XSS와 로그 인젝션은 13~15%에 그쳤다[^veracode-genai]. 패턴 매칭만 하는 린터는 AI 코드가 가장 약한 유형을 그대로 통과시킨다.
 
 수치를 사내 문서에 인용할 때는 측정 방식을 함께 적는다. 과제 기반으로 코드를 생성시켜 측정한 결과와 실제 저장소를 정적 분석한 결과는 모수가 달라 직접 비교할 수 없다[^ai-code-cwe].
 
-취약점 보고 시 AI 생성 보고서를 그대로 제출하지 않는 규칙은 [오픈소스SW 기여하기](/contributing/)에서 다룬다.
+취약점 보고 시 AI 생성 보고서를 그대로 제출하지 않는 규칙은 [오픈소스SW 기여하기](../contributing/)에서 다룬다.
 
 [^pkg-hallucination]: Spracklen et al., We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs, USENIX Security 2025 : https://www.usenix.org/conference/usenixsecurity25/presentation/spracklen
 [^veracode-genai]: Veracode, Spring 2026 GenAI Code Security Update : https://www.veracode.com/blog/spring-2026-genai-code-security/

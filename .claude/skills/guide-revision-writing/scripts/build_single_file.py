@@ -165,14 +165,20 @@ def namespace_footnotes(text: str, slug: str) -> tuple[str, int]:
 
 
 def rewrite_links(text: str, chapter_anchor: dict[str, str]) -> tuple[str, int]:
-    """사이트 절대 경로 링크를 단일 파일 내부 앵커로 바꾼다."""
+    """사이트 내부 링크를 단일 파일 내부 앵커로 바꾼다.
+
+    본문은 상대 경로(`](../using/)`)를 쓴다. 서브 경로 baseURL 에서 마크다운
+    절대 경로에 서브 경로가 붙지 않아 404 가 되기 때문이다. 과거 원고에 남아
+    있을 수 있는 절대 경로(`](/using/)`) 도 함께 받아 준다.
+    """
     n = 0
-    # /using/#앵커 → #앵커  (합쳐지면 같은 문서이므로 경로가 사라진다)
-    text, k = re.subn(r"\]\(/(?:" + "|".join(SECTIONS) + r")/#", "](#", text)
+    prefix = r"\]\((?:\.\./|/)(?:" + "|".join(SECTIONS) + r")/"
+    # ../using/#앵커 → #앵커  (합쳐지면 같은 문서이므로 경로가 사라진다)
+    text, k = re.subn(prefix + "#", "](#", text)
     n += k
-    # /using/ → 해당 장 H1 앵커
+    # ../using/ → 해당 장 H1 앵커
     for slug, anchor in chapter_anchor.items():
-        text, k = re.subn(re.escape(f"](/{slug}/)"), f"](#{anchor})", text)
+        text, k = re.subn(r"\]\((?:\.\./|/)" + re.escape(slug) + r"/\)", f"](#{anchor})", text)
         n += k
     return text, n
 
