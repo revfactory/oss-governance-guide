@@ -407,9 +407,9 @@ Gartner의 [Technology Insight for Software Composition Analysis (2019) 보고�
 
 아래 표는 결합 방식과 라이선스 계열의 조합에서 소스 공개 의무가 발생하는지를 정리한 것이다. 표는 소프트웨어를 조직 밖으로 전달하거나 네트워크로 제공하는 상황을 전제로 한다. 전달 자체가 없으면 아래 판정을 적용하기 전에 [오픈소스SW 배포](#오픈소스sw-배포)의 판정표를 먼저 본다.
 
-![라이선스 의무 발생 판단 흐름](content/en/using/license-obligation-decision-tree.png)
+![라이선스 의무 발생 판단 — 결합 방식 × 라이선스 계열](content/en/using/license-obligation-decision-tree.png)
 
-*[라이선스 의무 발생 판단 흐름]*
+*[라이선스 의무 발생 판단 — 결합 방식 × 라이선스 계열]*
 
 | 결합 방식 | permissive | LGPL | MPL·EPL | GPL | AGPL |
 |-----------|-----------|------|---------|-----|------|
